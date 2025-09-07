@@ -90,7 +90,7 @@ int main() {
                 cin >> sev;
             }
             
-            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            cin.ignore(numeric_limits<streamsize>::max(), '\n'); // throw away everything till the new line
             cout << "Description: ";
             getline(cin, des);
             patient data = patient(fn, ln, sev, des);
