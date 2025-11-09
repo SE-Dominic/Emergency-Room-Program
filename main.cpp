@@ -46,12 +46,7 @@ void menu() {
     cout << "4. EXIT" << endl;
     cout << endl;
 }
-/*
-You need to create this struct because a priority queue by default 
-is a max heap so its greatest -> smallest. This structure ensures that 
-the larger severity will go to the end of the queue while the smaller 
-severity will remain at the front.
-*/
+
 struct ComparePatients {
     bool operator()(const patient& a, const patient& b) const {
         return a.get_severity() > b.get_severity();
